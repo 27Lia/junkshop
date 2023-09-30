@@ -74,13 +74,13 @@ const SliderStyle = styled.div`
     button {
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      background-color: #ff5733; // 버튼 배경색
+      background-color: #2c72cd; // 버튼 배경색
       color: #ffffff; // 버튼 글자색
       border: none;
       border-radius: 5px; // 버튼 모서리 둥글게
       cursor: pointer; // 마우스 포인터 변경
       &:hover {
-        background-color: #ff6f47; // 마우스 오버 시 색상 변경
+        background-color: #528ede; // 마우스 오버 시 색상 변경
       }
     }
     .hp {

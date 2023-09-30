@@ -8,7 +8,7 @@ const StyleNav = styled.nav`
     height: 60px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
     font-weight: 600;
   }
 `;
