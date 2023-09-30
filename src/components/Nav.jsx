@@ -3,8 +3,6 @@ import InnerContainer from './InnerContainer.jsx';
 
 const StyleNav = styled.nav`
   width: 100%;
-  background-color: #000;
-  color: white;
 
   .li-container {
     height: 60px;
