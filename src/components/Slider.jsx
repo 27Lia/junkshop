@@ -3,12 +3,11 @@ import { useState, useEffect } from 'react';
 
 const SliderStyle = styled.div`
   position: relative;
-  height: 450px;
+  height: 47vh;
   border-bottom: 1px solid #ddd;
 
   .img-div {
     position: absolute;
-    background-color: #000;
     height: 450px;
     width: 100%;
     background-position: center;
@@ -59,8 +58,6 @@ const SliderStyle = styled.div`
     text-align: center; // 텍스트를 중앙 정렬
     background-color: rgba(0, 0, 0, 0.5); // 불투명한 검은색 배경
     padding: 1rem; // 패딩 추가
-    border-radius: 10px; // 모서리 둥글게
-    // 텍스트 컨테이너를 더 작게 만들어서 텍스트가 잘 들어가도록
     width: 100%;
     height: 70%;
 
@@ -82,10 +79,14 @@ const SliderStyle = styled.div`
       border: none;
       border-radius: 5px; // 버튼 모서리 둥글게
       cursor: pointer; // 마우스 포인터 변경
-
       &:hover {
         background-color: #ff6f47; // 마우스 오버 시 색상 변경
       }
+    }
+    .hp {
+      display: flex;
+      margin-top: 10px;
+      gap: 10px;
     }
   }
 `;
@@ -138,10 +139,14 @@ function Slider() {
         <div>
           고객님의 편의를 위해 항상 친절하고 정확한 서비스를 약속드립니다.
         </div>
-        <a href="tel:010-3331-3743">
-          {/* 버튼을 클릭하면 전화가 걸리게 하는 링크 */}
-          <button>010-3331-3743</button>
-        </a>
+        <div className="hp">
+          <a href="tel:010-2760-7753">
+            <button>010-2760-7753</button>
+          </a>
+          <a href="tel:010-9126-9896">
+            <button>010-9126-9896</button>
+          </a>
+        </div>
       </div>
     </SliderStyle>
   );
