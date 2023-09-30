@@ -14,22 +14,21 @@ const GalleryStyle = styled.div`
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 50px;
   }
   article,
   .box {
     width: 250px;
     height: 250px;
     border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-
-  .img-container {
-    height: 31vh;
+  button {
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+    justify-content: space-around;
   }
 
   @media (max-width: 1000px) {
@@ -99,8 +98,10 @@ function Gallery() {
         <div className="box-container">
           {images.map((image, index) => (
             <div key={index} className="img-container">
-              <img className="box" src={image.src} alt={image.alt} />
-              <div>{image.text}</div>
+              <button>
+                <img className="box" src={image.src} alt={image.alt} />
+                <h3>{image.text}</h3>
+              </button>
             </div>
           ))}
         </div>

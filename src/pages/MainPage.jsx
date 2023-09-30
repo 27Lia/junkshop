@@ -7,7 +7,7 @@ function MainPage() {
   return (
     <>
       <Nav />
-      <Slider />;
+      <Slider />
       <Section />
       <Gallery />
     </>

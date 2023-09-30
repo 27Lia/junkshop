@@ -22,80 +22,97 @@ const SectionStyle = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 250px;
     width: 250px;
-    padding: 25px;
+    padding: 18px;
     background-color: whitesmoke;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .description {
     margin: 20px 0px;
   }
-  .hp {
+  button {
     position: absolute;
-    top: 150px; // hp를 box의 하단에 배치합니다.
+    top: 200px;
+    width: 80px;
+    height: 40px;
+    background-color: #fdfafaa2; // 불투명한 검은색 배경
+    border: none;
+    &:hover {
+      background-color: #e5edf6; // 마우스 오버 시 색상 변경
+    }
   }
   @media (max-width: 1000px) {
     .box {
-      width: 200px; // 원하는 크기로 조정하세요.
-      height: 200px; // 원하는 크기로 조정하세요.
+      width: 200px;
+      height: 200px;
+    }
+    button {
+      top: 160px;
+      width: 60px;
+      height: 30px;
     }
   }
 
   @media (max-width: 800px) {
     .box {
-      width: 150px; // 원하는 크기로 조정하세요.
-      height: 150px; // 원하는 크기로 조정하세요.
+      width: 150px;
+      height: 150px;
     }
     .box h3,
     .description {
-      font-size: 0.8rem; // 예시입니다. 실제로는 적절한 크기로 조절해야 합니다.
+      font-size: 0.8rem;
     }
-    .hp {
-      top: 120px; // hp를 box의 하단에 배치합니다.
+    button {
+      top: 120px;
+      width: 50px;
+      height: 25px;
     }
   }
 
   @media (max-width: 600px) {
     .box-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); // 한 줄에 2개의 박스
-      gap: 10px; // 박스 사이의 간격을 설정합니다.
-      align-items: center; // 그리드 아이템들을 세로로 중앙 정렬합니다.
-      justify-content: center; // 그리드 아이템들을 가로로 중앙 정렬합니다.
-      margin: auto; // 컨테이너를 부모 요소의 센터에 위치시킵니다.
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
     }
 
     .box h3,
     .description {
-      font-size: 0.8rem; // 예시입니다. 실제로는 적절한 크기로 조절해야 합니다.
+      font-size: 0.8rem;
     }
   }
 `;
+
 function Section() {
   const boxes = [
     {
       title: '고철/비철 매입',
-      description: '각종 고철, 매입합니다.',
+      description: '고철ㆍ비철ㆍ동ㆍ신주 및 각종 전선류 고가매입합니다.',
       phoneNumber: '010-9126-9896',
       color: '#4383D8',
     },
     {
-      title: '고철/비철 매입',
+      title: '동ㆍ신주 및 각종 전선류 매입',
       description: '각종 고철,비철,특수금속등을 최고가에 매입합니다.',
       phoneNumber: '010-2760-7753',
       color: '#6FA6FF',
     },
     {
-      title: '고철/비철 매입',
-      description: '각종 고철,비 매입합니다.',
+      title: '중고 자재 및 기계 설비 매입',
+      description: '중고 자재 및 기계 설비 최고가 매입합니다.',
       phoneNumber: '010-9126-9896',
       color: '#00A7EC',
     },
     {
-      title: '고철/비철 매입',
-      description: '각종 최고가에 매입합니다.',
+      title: '각종철거 및 폐기물 처리',
+      description: ' 각종 철거 및 폐기물 처리 최저가 약속드립니다.',
       phoneNumber: '010-2760-7753',
       color: '#78AEFF',
     },

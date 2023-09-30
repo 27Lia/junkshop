@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const SliderStyle = styled.div`
   position: relative;
-  height: 47vh;
+  height: 450px;
   border-bottom: 1px solid #ddd;
 
   .img-div {
@@ -29,7 +29,7 @@ const SliderStyle = styled.div`
     transform: translateX(-50%);
     transition: transform 1s ease-in-out;
     display: flex;
-    z-index: 3;
+    z-index: 999;
 
     div {
       width: 10px;
@@ -55,34 +55,44 @@ const SliderStyle = styled.div`
     transform: translate(-50%, -50%);
     color: #ffffff;
     z-index: 3;
-    text-align: center; // 텍스트를 중앙 정렬
-    background-color: rgba(0, 0, 0, 0.5); // 불투명한 검은색 배경
-    padding: 1rem; // 패딩 추가
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
     width: 100%;
-    height: 70%;
+    height: 100%;
 
     h1 {
-      font-size: 2.5rem; // 글자 크기를 조절합니다. 필요에 따라 변경 가능합니다.
-      margin-bottom: 1rem; // 여백을 추가합니다.
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
     div {
-      font-size: 1.25rem; // 글자 크기를 조절합니다. 필요에 따라 변경 가능합니다.
-      margin-bottom: 0.5rem; // 여백을 추가합니다.
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
     }
 
     button {
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      background-color: #2c72cd; // 버튼 배경색
-      color: #ffffff; // 버튼 글자색
-      border: none;
-      border-radius: 5px; // 버튼 모서리 둥글게
-      cursor: pointer; // 마우스 포인터 변경
+      background-color: #ffffff; // or a light grey like #f0f0f0
+      border-radius: 5px;
+      cursor: pointer;
+
       &:hover {
-        background-color: #528ede; // 마우스 오버 시 색상 변경
+        background-color: #005eff; // Hover시에 배경을 오렌지로 변경
+        color: #ffffff; // 텍스트 색상은 하얀색으로 변경
       }
     }
+    .main-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: #005eff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin-bottom: 40px;
+    }
+
     .hp {
       display: flex;
       margin-top: 10px;
@@ -131,10 +141,11 @@ function Slider() {
         ))}
       </div>
       <div className="text-container">
-        <h1>24시간 상담 가능!</h1>
+        <h1>24시간 상담 가능</h1>
+        <div className="main-text">현대제철 ㆍ동국제강ㆍ환영철강 협력업체</div>
         <div>
-          고철, 비철, 파지, 폐전선, PCB 등 모든 종류의 폐기물을 최고가로
-          매입합니다.
+          고철, 비철, 파지, 폐전선, PCB 등 모든 종류의 폐기물을 최저가로
+          처리합니다.
         </div>
         <div>
           고객님의 편의를 위해 항상 친절하고 정확한 서비스를 약속드립니다.
