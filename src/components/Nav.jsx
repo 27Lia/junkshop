@@ -11,6 +11,11 @@ const StyleNav = styled.nav`
     gap: 25px;
     font-weight: 600;
   }
+
+  @media (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 function Nav() {
