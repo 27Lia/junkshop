@@ -25,7 +25,7 @@ const SectionStyle = styled.div`
     justify-content: center;
     height: 250px;
     width: 250px;
-    padding: 18px;
+    padding: 15px;
     background-color: #f0f0f0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;

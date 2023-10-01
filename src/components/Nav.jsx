@@ -29,6 +29,9 @@ const StyleNav = styled.nav`
 `;
 
 function Nav() {
+  const clickHandler = () => {
+    alert('이 기능은 곧 업데이트될 예정입니다. 기다려 주셔서 감사합니다.');
+  };
   return (
     <StyleNav>
       <InnerContainer>
@@ -41,7 +44,9 @@ function Nav() {
               <Link to="/company">회사업무</Link>
             </li>
             <li>
-              <Link to="/gallery">갤러리</Link>
+              <Link to="/gallery" onClick={clickHandler}>
+                갤러리
+              </Link>
             </li>
           </ul>
         </nav>{' '}
