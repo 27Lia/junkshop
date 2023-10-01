@@ -10,7 +10,7 @@ const StyleHeader = styled.header`
   font-size: 24px;
   font-weight: 700;
   background-color: #ffffff;
-  border-bottom: 2px solid #e8f4fa;
+  border-bottom: 2px solid #f7f6f6;
   padding: 0 20px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 

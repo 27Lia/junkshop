@@ -72,16 +72,19 @@ const SliderStyle = styled.div`
     }
 
     button {
-      padding: 0.5rem 1rem;
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      padding: 0.5rem;
       font-size: 1rem;
-      background-color: #4a90e2;
-      color: #ffffff;
+      background-color: #f8f6f6f0;
+      color: #000000;
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #6fa2dc;
+        background-color: #d2d1d1ec;
       }
     }
 
@@ -155,10 +158,10 @@ function Slider() {
         </div>
         <div className="hp">
           <a href="tel:010-2760-7753">
-            <button>010-2760-7753</button>
+            <button>전화하기</button>
           </a>
-          <a href="tel:010-9126-9896">
-            <button>010-9126-9896</button>
+          <a href="sms:010-9126-9896">
+            <button>문자 보내기</button>
           </a>
         </div>
       </div>

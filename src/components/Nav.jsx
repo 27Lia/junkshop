@@ -38,7 +38,7 @@ function Nav() {
               <Link to="/introduction">회사소개</Link>
             </li>
             <li>
-              <Link to="/scrap">고철/비철</Link>
+              <Link to="/company">회사업무</Link>
             </li>
             <li>
               <Link to="/gallery">갤러리</Link>

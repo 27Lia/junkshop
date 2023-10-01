@@ -1,11 +1,12 @@
 import './App.css';
+import { styled } from 'styled-components';
 import MainPage from '../src/pages/MainPage.jsx';
 import Header from '../src/components/Header.jsx';
 import Nav from '../src/components/Nav.jsx';
 import Footer from './components/Footer.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import IntroductionPage from './pages/IntroductionPage.jsx';
-import { styled } from 'styled-components';
+import CompanyPage from './pages/CompanyPage.jsx';
 
 const AppContainer = styled.div`
   display: flex;
@@ -28,8 +29,8 @@ function App() {
             <Routes>
               <Route path="/" element={<MainPage />} />
               <Route path="/introduction" element={<IntroductionPage />} />
-              <Route path="/scrap" element={<IntroductionPage />} />
-              <Route path="/gallery" element={<IntroductionPage />} />
+              <Route path="/company" element={<CompanyPage />} />
+              <Route path="/gallery" element={<MainPage />} />
             </Routes>
           </MainContent>
           <Footer />
