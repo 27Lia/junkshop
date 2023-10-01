@@ -21,7 +21,7 @@ const GalleryStyle = styled.div`
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   button {
     height: 35vh;
@@ -33,15 +33,15 @@ const GalleryStyle = styled.div`
 
   @media (max-width: 1000px) {
     .box {
-      width: 200px; // 원하는 크기로 조정하세요.
-      height: 200px; // 원하는 크기로 조정하세요.
+      width: 200px;
+      height: 200px;
     }
   }
 
   @media (max-width: 800px) {
     .box {
-      width: 150px; // 원하는 크기로 조정하세요.
-      height: 150px; // 원하는 크기로 조정하세요.
+      width: 150px;
+      height: 150px;
     }
   }
 
@@ -50,11 +50,11 @@ const GalleryStyle = styled.div`
 
     .box-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); // 한 줄에 2개의 박스
-      gap: 10px; // 박스 사이의 간격을 설정합니다.
-      align-items: center; // 그리드 아이템들을 세로로 중앙 정렬합니다.
-      justify-content: center; // 그리드 아이템들을 가로로 중앙 정렬합니다.
-      margin: auto; // 컨테이너를 부모 요소의 센터에 위치시킵니다.
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
     }
 
     .img-container {
@@ -62,7 +62,7 @@ const GalleryStyle = styled.div`
     }
     .box h3,
     .description {
-      font-size: 0.8rem; // 예시입니다. 실제로는 적절한 크기로 조절해야 합니다.
+      font-size: 0.8rem;
     }
   }
 `;
@@ -94,7 +94,7 @@ function Gallery() {
   return (
     <InnerContainer>
       <GalleryStyle>
-        <h3>갤러리</h3>
+        <h2>갤러리</h2>
         <div className="box-container">
           {images.map((image, index) => (
             <div key={index} className="img-container">

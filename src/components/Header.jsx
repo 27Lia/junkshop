@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { styled } from 'styled-components';
 
 const StyleHeader = styled.header`
@@ -8,10 +9,10 @@ const StyleHeader = styled.header`
   align-items: center;
   font-size: 24px;
   font-weight: 700;
-  background-color: #f4f4f4;
-  color: #333333;
-  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  border-bottom: 2px solid #e8f4fa;
   padding: 0 20px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 600px) {
     font-size: 20px;
@@ -21,7 +22,7 @@ const StyleHeader = styled.header`
 function Header() {
   return (
     <StyleHeader>
-      <header>여주 고철</header>
+      <Link to="/">여주 고철</Link>
     </StyleHeader>
   );
 }

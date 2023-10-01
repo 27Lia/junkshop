@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 const SliderStyle = styled.div`
   position: relative;
   height: 450px;
-  border-bottom: 1px solid #ddd;
 
   .img-div {
     position: absolute;
@@ -34,13 +33,13 @@ const SliderStyle = styled.div`
     div {
       width: 10px;
       height: 10px;
-      background-color: white;
+      background-color: #ffffff;
       margin: 0 5px;
       border-radius: 50%;
       cursor: pointer;
 
       &.active {
-        background-color: red;
+        background-color: #2e74ff;
       }
     }
   }
@@ -60,7 +59,8 @@ const SliderStyle = styled.div`
     padding: 1rem;
     width: 100%;
     height: 100%;
-
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
+    height: 100%;
     h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
@@ -68,25 +68,28 @@ const SliderStyle = styled.div`
 
     div {
       font-size: 1.25rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
     button {
       padding: 0.5rem 1rem;
       font-size: 1rem;
-      background-color: #ffffff; // or a light grey like #f0f0f0
+      background-color: #4a90e2;
+      color: #ffffff;
       border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s;
 
       &:hover {
-        background-color: #005eff; // Hover시에 배경을 오렌지로 변경
-        color: #ffffff; // 텍스트 색상은 하얀색으로 변경
+        background-color: #6fa2dc;
       }
     }
+
     .main-text {
       font-size: 1.5rem;
       font-weight: bold;
-      background-color: #005eff;
+      background-color: #e04e15;
+      color: #ffffff;
       padding: 10px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

@@ -5,7 +5,7 @@ const MapStyle = styled.div`
   .map-title {
     font-size: 24px;
     font-weight: 700;
-    margin: 40px 0px;
+    margin: 50px 0px;
     text-align: center;
     color: #333;
   }
@@ -24,6 +24,11 @@ const MapStyle = styled.div`
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
+  @media (max-width: 600px) {
+    .map-title {
+      margin-top: 120px;
+    }
+  }
 `;
 
 function Map() {
@@ -32,7 +37,7 @@ function Map() {
   useEffect(() => {
     const { naver } = window;
     const mapOptions = {
-      center: new naver.maps.LatLng(37.3392875, 127.5644038), // 지도 초기 위치
+      center: new naver.maps.LatLng(37.3390585, 127.5643322), // 지도 초기 위치
       zoom: 20, // 초기 확대 비율
     };
 
@@ -41,7 +46,7 @@ function Map() {
 
     // 마커 생성
     const marker = new naver.maps.Marker({
-      position: new naver.maps.LatLng(37.3392875, 127.5644038),
+      position: new naver.maps.LatLng(37.3390585, 127.5643322),
       map,
     });
     console.log(marker);
@@ -65,7 +70,7 @@ function Map() {
 
   return (
     <MapStyle>
-      <div className="map-title">오시는길</div>
+      <h2 className="map-title">오시는길</h2>
       <div ref={mapRef} className="map-container"></div>
     </MapStyle>
   );

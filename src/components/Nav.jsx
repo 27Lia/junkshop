@@ -1,9 +1,10 @@
 import { styled } from 'styled-components';
 import InnerContainer from './InnerContainer.jsx';
+import { Link } from 'react-router-dom';
 
 const StyleNav = styled.nav`
   width: 100%;
-  border-bottom: 1px solid #e1e1e1; // 경계선
+  background-color: #ffffff;
 
   .li-container {
     height: 60px;
@@ -11,6 +12,9 @@ const StyleNav = styled.nav`
     align-items: center;
     gap: 25px;
     font-weight: 600;
+    @media (max-width: 1000px) {
+      justify-content: space-around;
+    }
   }
 
   li {
@@ -19,29 +23,30 @@ const StyleNav = styled.nav`
     transition: background-color 0.3s;
     border-radius: 20px;
     &:hover {
-      background-color: #e1e1e1; // 마우스 오버 시 배경색 변경
+      background-color: #e1e1e1;
     }
-  }
-
-  @media (max-width: 800px) {
-    display: flex;
-    justify-content: space-around; // 모바일 뷰에서 아이템 간격 균등하게 조정
   }
 `;
 
 function Nav() {
   return (
-    <InnerContainer>
-      <StyleNav>
+    <StyleNav>
+      <InnerContainer>
         <nav>
           <ul className="li-container">
-            <li>회사소개</li>
-            <li>고철/비철</li>
-            <li>갤러리</li>
+            <li>
+              <Link to="/introduction">회사소개</Link>
+            </li>
+            <li>
+              <Link to="/scrap">고철/비철</Link>
+            </li>
+            <li>
+              <Link to="/gallery">갤러리</Link>
+            </li>
           </ul>
-        </nav>
-      </StyleNav>
-    </InnerContainer>
+        </nav>{' '}
+      </InnerContainer>
+    </StyleNav>
   );
 }
 
