@@ -58,7 +58,8 @@ const GalleryStyle = styled.div`
     }
 
     .img-container {
-      justify-content: space-evenly;
+      display: flex;
+      justify-content: center;
     }
     .box h3,
     .description {
