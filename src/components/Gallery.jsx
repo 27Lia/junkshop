@@ -78,17 +78,17 @@ function Gallery() {
     {
       src: '/img/img3.jpeg',
       alt: '이미지',
-      text: '고철/비철 각종 고철/비철류 매입',
+      text: '현대제철 ㆍ동국제강ㆍ환영철강 협력업체',
     },
     {
       src: '/img/img7.jpeg',
       alt: '이미지',
-      text: '고철/비철 각종 고철/비철류 매입',
+      text: '모든 종류의 폐기물을 최저가처리',
     },
     {
       src: '/img/img9.jpeg',
       alt: '이미지',
-      text: '고철/비철 각종 고철/비철류 매입',
+      text: '친절하고 정확한 서비스',
     },
   ];
 

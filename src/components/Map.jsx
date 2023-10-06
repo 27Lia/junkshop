@@ -57,15 +57,7 @@ function Map() {
         '<div class="tooltip">여주고철(경기 여주시 흥천면 능북로 220)</div>',
     });
 
-    // 마커에 마우스 올리면 툴팁 표시
-    naver.maps.Event.addListener(marker, 'mouseover', () => {
-      tooltip.open(map, marker);
-    });
-
-    // 마커에서 마우스 제거하면 툴팁 제거
-    naver.maps.Event.addListener(marker, 'mouseout', () => {
-      tooltip.close();
-    });
+    tooltip.open(map, marker);
   }, []);
 
   return (
