@@ -26,8 +26,7 @@ function Footer() {
     <FooterStyle>
       <InnerContainer>
         <div className="footer-text">
-          상호명:여주고철 | 사업자등록번호:예정 | 대표전화:010-2760-7753,
-          010-9126-9896
+          상호명:여주고철 | 대표전화:010-2760-7753, 010-9126-9896
         </div>
         <div>Copyright © 여주고철 All rights reserved.</div>
       </InnerContainer>
